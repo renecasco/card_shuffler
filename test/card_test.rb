@@ -2,7 +2,7 @@ require 'minitest/test'
 require 'minitest/autorun'
 require './lib/card'
 
-class CardTest < MiniTest::Test
+class CardTest < Minitest::Test
   def test_card_exists
     card = Card.new("queen", "hearts")
 
