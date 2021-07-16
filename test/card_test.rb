@@ -8,4 +8,11 @@ class CardTest < Minitest::Test
 
     assert_instance_of Card, card
   end
+
+  def test_it_has_rank_and_suit
+    card = Card.new("queen", "hearts")
+
+    assert_equal card.rank, "queen"
+    assert_equal card.suit, "hearts"
+  end
 end
