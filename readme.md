@@ -4,7 +4,7 @@
 
 This is a ruby application that generates a deck of cards and then  shuffles it using the Fisher-Yates shuffle algorithm.
 
-##### Running Card Shuffler
+#### Running Card Shuffler
 
 To run this application:
 
