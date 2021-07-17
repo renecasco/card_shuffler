@@ -29,6 +29,7 @@ class CardTest < Minitest::Test
 
     shuffled_deck = deck_1.shuffle_it
     #refute equality of original deck array from shuffled deck Array
-    refute_equal deck_1, shuffled_deck
+    # assert_kind_of Array,
+    refute_equal deck_1.cards, shuffled_deck.cards
   end
 end
