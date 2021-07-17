@@ -17,6 +17,9 @@ class CardTest < Minitest::Test
 
     assert_kind_of Array, deck.cards
     assert_equal  52, deck.cards.length
-    assert_equal  expected_cards, deck.cards
+    deck.cards.each_with_index do |actual_card, index|
+       assert_equal expected_cards[index].rank, actual_card.rank
+       assert_equal expected_cards[index].suit, actual_card.suit
+    end
   end
 end
