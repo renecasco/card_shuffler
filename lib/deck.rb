@@ -22,6 +22,10 @@ class Deck
     return @cards
   end
 
+  def print_it
+    puts @cards.join(', ')
+  end
+
   private
 
   def generate_cards
