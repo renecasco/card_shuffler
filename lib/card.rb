@@ -1,8 +1,13 @@
 class Card
   attr_reader :rank,
-              :suit
-  def initialize(rank, suit)
+              :suite
+  def initialize(rank, suite)
     @rank = rank
-    @suit = suit
+    @suite = suite
+  end
+
+  # takes card object and outputs string
+  def to_text
+    "#{rank} of #{suite}"
   end
 end
