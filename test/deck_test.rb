@@ -1,6 +1,7 @@
 require 'minitest/test'
 require 'minitest/autorun'
 require './lib/deck'
+require 'pry'
 
 class CardTest < Minitest::Test
   def test_deck_exists
@@ -27,9 +28,8 @@ class CardTest < Minitest::Test
     # assert that deck_1 and deck_2 cards have the same values befor shuffling
     assert_equal deck_2.cards, deck_1.cards
 
-    shuffled_deck = deck_1.shuffle_it
+    deck_2.shuffle_it
     #refute equality of original deck array from shuffled deck Array
-    # assert_kind_of Array,
-    refute_equal deck_1.cards, shuffled_deck.cards
+    refute_equal deck_1.cards, deck_2.cards
   end
 end
