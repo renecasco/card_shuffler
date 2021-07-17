@@ -29,7 +29,7 @@ class CardTest < Minitest::Test
     assert_equal deck_2.cards, deck_1.cards
 
     deck_2.shuffle_it
-    #refute equality of original deck array from shuffled deck Array
+    #refute equality of unshuffled deck_1 array from shuffled deck_2 array
     refute_equal deck_1.cards, deck_2.cards
   end
 end
