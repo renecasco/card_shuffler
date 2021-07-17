@@ -5,4 +5,9 @@ class Card
     @rank = rank
     @suite = suite
   end
+
+  # takes card object and outputs string
+  def to_text
+    "#{rank} of #{suite}"
+  end
 end
